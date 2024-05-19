@@ -20,7 +20,7 @@ FOR /F "tokens=*" %%i IN ('..\Tools\Tools\sigcheck.exe /accepteula /nobanner /n 
 COPY ..\Installer\Trailers.xmp2 ..\Installer\TrailersTemp.xmp2
 
 :: Build MPE1
-CD ..\MPEI
+CD ..\Installer
 "%PROGS%\Team MediaPortal\MediaPortal\MPEMaker.exe" ..\Installer\TrailersTemp.xmp2 /B /V=%version% /UpdateXML
 CD ..\build
 
