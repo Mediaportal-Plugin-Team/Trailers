@@ -556,7 +556,7 @@ It searches local trailers and online sources, it also has the capability to str
 
 Note: Remember to start contributing to themoviedb.org, this is where all the online searches are coming from.</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
-    <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/Trailers/releases/download/v[Version]/Trailers-[Version].mpe1</OnlineLocation>
+    <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/Trailers/releases/download/v[Version]/Trailers-v[Version].mpe1</OnlineLocation>
     <ReleaseDate>2024-05-19T13:13:13</ReleaseDate>
     <Tags>trailers</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
