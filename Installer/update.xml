@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ExtensionCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ExtensionCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Items>
     <PackageClass>
       <Version>2.0</Version>
@@ -24,20 +24,21 @@
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -83,6 +84,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.1.0/Trailers_v1.0.1.0.mpe1</OnlineLocation>
         <ReleaseDate>2013-11-08T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -142,20 +144,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -203,6 +206,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.2.0/Trailers_v1.0.2.0.mpe1</OnlineLocation>
         <ReleaseDate>2013-11-10T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -262,20 +266,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -321,6 +326,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.3.0/Trailers_v1.0.3.0.mpe1</OnlineLocation>
         <ReleaseDate>2013-11-16T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -380,20 +386,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -437,6 +444,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.4.0/Trailers_v1.0.4.0.mpe1</OnlineLocation>
         <ReleaseDate>2013-11-29T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -504,20 +512,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -563,6 +572,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.5.0/Trailers_v1.0.5.0.mpe1</OnlineLocation>
         <ReleaseDate>2013-12-06T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -630,20 +640,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -673,6 +684,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.6.0/Trailers_v1.0.6.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-01-03T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -740,20 +752,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -783,6 +796,7 @@ It searches local trailers and online sources, it also has the capability to str
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.0.7.0/Trailers_v1.0.7.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-01-08T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -850,20 +864,21 @@ It searches local trailers and online sources, it also has the capability to str
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -896,6 +911,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.1.0.0/Trailers_v1.1.1.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-04-12T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -963,20 +979,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1009,6 +1026,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>http://www.team-mediaportal.com/index.php?option=com_mtree&amp;task=att_download&amp;link_id=296&amp;cf_id=24</OnlineLocation>
         <ReleaseDate>2014-04-13T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1076,20 +1094,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1121,6 +1140,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.1.2.0/Trailers_v1.1.2.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-04-14T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1196,20 +1216,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1242,6 +1263,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.1.3.0/Trailers_v1.1.3.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-04-27T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1325,20 +1347,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1370,6 +1393,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.1.4.1/Trailers_v1.1.4.1.mpe1</OnlineLocation>
         <ReleaseDate>2014-04-27T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1453,20 +1477,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.3 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1499,6 +1524,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.1.5.0/Trailers_v1.1.5.0.mpe1</OnlineLocation>
         <ReleaseDate>2014-05-03T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1582,20 +1608,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.8 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1632,6 +1659,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.2.0.0/Trailers_v1.2.0.0.mpe1</OnlineLocation>
         <ReleaseDate>2015-03-27T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1715,20 +1743,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.8 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1759,6 +1788,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.2.1.0/Trailers_v1.2.1.0.mpe1</OnlineLocation>
         <ReleaseDate>2015-04-11T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1842,20 +1872,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.8 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -1888,6 +1919,7 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.2.2.0/Trailers_v1.2.2.0.mpe1</OnlineLocation>
         <ReleaseDate>2016-01-16T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
         <Params>
           <Items>
@@ -1971,20 +2003,21 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
             <Type>MediaPortal</Type>
             <Id />
             <MinVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MinVersion>
             <MaxVersion>
-              <Major>1</Major>
-              <Minor>1</Minor>
-              <Build>6</Build>
-              <Revision>27644</Revision>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
             </MaxVersion>
             <WarnOnly>false</WarnOnly>
             <Message>Trailers requires MediaPortal version 1.8 or higher.</Message>
             <Name>MediaPortal</Name>
+            <Condition>None</Condition>
           </DependencyItem>
         </Items>
       </Dependencies>
@@ -2015,7 +2048,156 @@ Note: Remember to start contributing to themoviedb.org, this is where all the on
         <OnlineLocation>https://github.com/damienhaynes/Trailers/releases/download/1.3.0.1/Trailers_v1.3.0.1.mpe1</OnlineLocation>
         <ReleaseDate>2020-02-23T21:11:07</ReleaseDate>
         <Tags>trailers</Tags>
+        <PlatformCompatibility>x86</PlatformCompatibility>
         <Location>C:\Development\Trailers\Installer\Trailers.mpe1</Location>
+        <Params>
+          <Items>
+            <SectionParam Name="Online Icon">
+              <Value>https://raw.github.com/damienhaynes/Trailers/master/Installer/Resources/Trailers.png</Value>
+              <ValueType>String</ValueType>
+              <Description>The icon file of the package stored online (jpg,png,bmp)</Description>
+            </SectionParam>
+            <SectionParam Name="Configuration file">
+              <Value>%Plugins%\Windows\Trailers.dll</Value>
+              <ValueType>Template</ValueType>
+              <Description>The file used to configure the extension.
+ If it has .exe extension the will be executed.
+ If it has .dll extension it's started like MP plugin configuration.</Description>
+            </SectionParam>
+            <SectionParam Name="Online Screenshots">
+              <Value>https://raw.github.com/damienhaynes/Trailers/master/Installer/Resources/TrailersScreenshot1.jpg;https://raw.github.com/damienhaynes/Trailers/master/Installer/Resources/TrailersScreenshot2.jpg;https://raw.github.com/damienhaynes/Trailers/master/Installer/Resources/TrailersScreenshot3.jpg</Value>
+              <ValueType>String</ValueType>
+              <Description>Online stored screenshot urls separated by ; </Description>
+            </SectionParam>
+            <SectionParam Name="Force to uninstall on update">
+              <Value>YES</Value>
+              <ValueType>Bool</ValueType>
+              <Description>Show dialog and force to uninstall previous version when updating an extension. Should only be disabled if you are using an NSIS/MSI installer.</Description>
+            </SectionParam>
+          </Items>
+        </Params>
+      </GeneralInfo>
+      <UniqueFileList>
+        <Items />
+      </UniqueFileList>
+      <ProjectSettings>
+        <FolderGroups />
+      </ProjectSettings>
+      <IsSkin>false</IsSkin>
+    </PackageClass>
+    <PackageClass>
+      <Version>2.0</Version>
+      <Groups>
+        <Items>
+          <GroupItem Name="Default">
+            <DisplayName>Default</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>Default</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="Settings">
+            <DisplayName>Settings</DisplayName>
+            <DefaulChecked>false</DefaulChecked>
+            <Description>Settings</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="ExtensionsPlugin">
+            <DisplayName>ExtensionsPlugin</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>ExtensionsPlugin</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+          <GroupItem Name="OnlineVideos">
+            <DisplayName>OnlineVideos</DisplayName>
+            <DefaulChecked>true</DefaulChecked>
+            <Description>OnlineVideos</Description>
+            <Files>
+              <Items />
+            </Files>
+          </GroupItem>
+        </Items>
+      </Groups>
+      <Sections>
+        <Items />
+      </Sections>
+      <Dependencies>
+        <Items>
+          <DependencyItem>
+            <Type>MediaPortal</Type>
+            <Id />
+            <MinVersion>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
+            </MinVersion>
+            <MaxVersion>
+              <Major>*</Major>
+              <Minor>*</Minor>
+              <Build>*</Build>
+              <Revision>*</Revision>
+            </MaxVersion>
+            <WarnOnly>false</WarnOnly>
+            <Message />
+            <Name>MediaPortal</Name>
+            <Condition>None</Condition>
+          </DependencyItem>
+        </Items>
+      </Dependencies>
+      <PluginDependencies>
+        <Items>
+          <PluginDependencyItem AssemblyName="Trailers.dll">
+            <CompatibleVersion>
+              <Items>
+                <CompatibleVersionItem>
+                  <MinRequiredVersion>1.1.6.27644</MinRequiredVersion>
+                  <DesignedForVersion>1.1.6.27644</DesignedForVersion>
+                </CompatibleVersionItem>
+              </Items>
+            </CompatibleVersion>
+            <SubSystemsUsed>
+              <Items />
+            </SubSystemsUsed>
+          </PluginDependencyItem>
+        </Items>
+      </PluginDependencies>
+      <GeneralInfo>
+        <Name>Trailers</Name>
+        <Id>b4293f64-9e83-4f1f-b2e3-8bdea2a37425</Id>
+        <Author>Damien Haynes (ltfearme)</Author>
+        <HomePage>https://github.com/damienhaynes/Trailers</HomePage>
+        <ForumPage>http://forum.team-mediaportal.com/threads/new-trailers-plugin.122644/</ForumPage>
+        <UpdateUrl>https://raw.githubusercontent.com/Mediaportal-Plugin-Team/Trailers/master/Installer/update.xml</UpdateUrl>
+        <Version>
+          <Major>1</Major>
+          <Minor>3</Minor>
+          <Build>5</Build>
+          <Revision>107</Revision>
+        </Version>
+        <ExtensionDescription>Trailers is a plugin which helps users play movie and tvshow trailers from all the media plugins available in MediaPortal.
+
+
+
+It searches local trailers and online sources, it also has the capability to stream trailers with the help of the OnlineVideos plugin.</ExtensionDescription>
+        <VersionDescription>* Fixed trailer download not working due to changes in OnlineVideos YouTube site - further work may be required as it's unclear whether this is a bug or change of behaviour;
+
+* Compatibility with new MyFilms v6.1.2+.
+
+
+
+Note: Remember to start contributing to themoviedb.org, this is where all the online searches are coming from.</VersionDescription>
+        <DevelopmentStatus>Stable</DevelopmentStatus>
+        <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/Trailers/releases/download/v1.3.5.107/Trailers-1.3.5.107.mpe1</OnlineLocation>
+        <ReleaseDate>2024-05-19T12:07:05.724266+00:00</ReleaseDate>
+        <Tags>trailers</Tags>
+        <PlatformCompatibility>AnyCPU</PlatformCompatibility>
+        <Location>.\Release\Trailers-v[Version].mpe1</Location>
         <Params>
           <Items>
             <SectionParam Name="Online Icon">
