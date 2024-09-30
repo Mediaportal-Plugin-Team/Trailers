@@ -3,7 +3,7 @@ name: Build / Trailers Plugin
 on:
   push:
     # On Push to Master branch
-    branches: 
+    branches:
       - master
     # Ignore all Tags / Release
     tags-ignore:
@@ -70,19 +70,19 @@ jobs:
     outputs:
       changes: ${{ steps.changes.outputs.xmp }}
     steps:
-    - uses: actions/checkout@v4
-    - uses: dorny/paths-filter@v3
-      id: changes
-      with:
-        filters: |
-          xmp:
-            - '**.xmp2'
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            xmp:
+              - '**.xmp2'
 
   codeql:
     name: CodeQL
     if: ${{ needs.changes.outputs.changes == 'true' }}
     uses: Mediaportal-Plugin-Team/Mediaportal-Tools/.github/workflows/codeql.yml@master
-    needs: 
+    needs:
       - build
       - changes
     permissions:
@@ -223,8 +223,8 @@ jobs:
       - name: Delete XML Artifact
         uses: geekyeggo/delete-artifact@v5
         with:
-            name: Trailers XML
-            failOnError: false
+          name: Trailers XML
+          failOnError: false
 
   release:
     name: Trailers / Release
@@ -236,9 +236,9 @@ jobs:
       contents: write
     outputs:
       changes: ${{ needs.mpe.outputs.changes }}
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Download Artifacts
         uses: actions/download-artifact@v4
@@ -307,7 +307,7 @@ jobs:
       - name: Failure
         if: ${{ contains(needs.*.result, 'failure') }}
         run: exit 1
-  
+
   cache-clear:
     name: Clear cache
     runs-on: ubuntu-latest
