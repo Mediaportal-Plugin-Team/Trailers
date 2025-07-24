@@ -1,60 +1,73 @@
-﻿using System;
 using MediaPortal.Player;
+
 using OnlineVideos;
 using OnlineVideos.MediaPortal1.Player;
+
+using System;
+
 using Trailers.GUI;
 using Trailers.PluginHandlers;
 using Trailers.Providers;
+
 using PlayerFactory = OnlineVideos.MediaPortal1.Player.PlayerFactory;
 
 namespace Trailers.Player
 {
-    class OnlinePlayer
+    internal class OnlinePlayer
     {
+        /// <summary>
+        /// Gets the minimum required/supported version of the OnlineVideos library.
+        /// </summary>
+        private static Version OnlineVideosMinVersion { get; } = new Version(2, 0, 0, 0);
+        private static MediaItem _currentMedia;
+
         internal static string CurrentFileName { get; set; }
 
-        static MediaItem CurrentMedia { get; set; }
 
-        static void GetTrailerUrl(string htmlPage)
+        private static void GetTrailerUrl(string htmlPage)
         {
             // get playback url from stream
             FileLog.Debug("Getting playback url from page, URL = '{0}'", htmlPage);
 
             GUIBackgroundTask.Instance.ExecuteInBackgroundAndCallback(() =>
             {
-                var hosterBase = OnlineVideos.Hoster.HosterFactory.GetHoster("Youtube");
-                return hosterBase.GetVideoUrl(htmlPage);
+                var youtube = OnlineVideos.Hoster.HosterFactory.GetHoster("Youtube");
+                return youtube.GetVideoUrl(htmlPage);
             },
-            delegate(bool success, object result)
+            (bool success, object result) =>
             {
                 string url = result as string;
 
-                if (success)
+                if (!success)
                 {
-                    FileLog.Debug("Successfully found playback url.");
+                    return;
+                }
+                FileLog.Debug("Successfully found playback url.");
 
-                    if (!string.IsNullOrEmpty(url))
-                    {
-                        BufferTrailer(url);
-                    }
-                    else
-                    {
-                        FileLog.Info("Unable to get url for trailer playback.");
-                        GUIUtils.ShowNotifyDialog(Localisation.Translation.Error, Localisation.Translation.UnableToPlayTrailer);
-                    }
+                if (!string.IsNullOrWhiteSpace(url))
+                {
+                    BufferTrailer(url);
+                }
+                else
+                {
+                    FileLog.Info("Unable to get url for trailer playback.");
+                    GUIUtils.ShowNotifyDialog(Localisation.Translation.Error, Localisation.Translation.UnableToPlayTrailer);
                 }
             },
             Localisation.Translation.GettingTrailerUrls, false);
         }
 
-        static void BufferTrailer(string url)
+        private static void BufferTrailer(string url)
         {
             // stop player if currently playing some other video
-            if (g_Player.Playing) g_Player.Stop();
+            if (g_Player.Playing)
+            {
+                g_Player.Stop();
+            }
 
             // prepare graph must be done on the MP main thread
             FileLog.Debug("Preparing graph for playback, URL = '{0}'.", url);
-            var factory = new PlayerFactory(PlayerType.Internal, url);
+            var factory = new PlayerFactory(PlayerType.Internal, url, null);
             bool? prepareResult = ((OnlineVideosPlayer)factory.PreparedPlayer).PrepareGraph();
             FileLog.Debug("Graph is now prepared.");
 
@@ -76,16 +89,16 @@ namespace Trailers.Player
                             return null;
                         }
                     },
-                    delegate(bool success, object result)
+                    (bool success, object result) =>
                     {
-                        PlayTrailer(url, factory, result as bool?);
+                        PlayTrailer(factory, result as bool?);
                     },
                     Localisation.Translation.BufferingTrailer, false);
                     break;
 
                 case false:
                     // play without buffering
-                    PlayTrailer(url, factory, prepareResult);
+                    PlayTrailer(factory, prepareResult);
                     break;
 
                 default:
@@ -95,7 +108,7 @@ namespace Trailers.Player
             }
         }
 
-        static void PlayTrailer(string url, PlayerFactory factory, bool? preparedPlayerResult)
+        private static void PlayTrailer(PlayerFactory factory, bool? preparedPlayerResult)
         {
             if (preparedPlayerResult != null)
             {
@@ -110,7 +123,7 @@ namespace Trailers.Player
                     g_Player.Play(factory.PreparedUrl, g_Player.MediaType.Video);
 
                     // make the OSD pretty with poster, title etc
-                    GUIUtils.SetPlayProperties(CurrentMedia, true);
+                    GUIUtils.SetPlayProperties(_currentMedia, true);
                 }
                 catch (Exception e)
                 {
@@ -128,20 +141,23 @@ namespace Trailers.Player
 
         internal static void Play(string url, MediaItem mediaItem)
         {
-            if (string.IsNullOrEmpty(url)) return;
+            if (string.IsNullOrEmpty(url))
+            {
+                return;
+            }
 
             if (!Utility.IsPluginAvailable("OnlineVideos"))
             {
                 GUIUtils.ShowNotifyDialog(Localisation.Translation.Trailers, Localisation.Translation.OnlineVideosNotInstalled);
                 return;
             }
-            else if (Utility.FileVersion(Utility.OnlineVideosPlugin) < new Version(2, 0, 0, 0))
+            else if (Utility.FileVersion(Utility.OnlineVideosPlugin) < OnlineVideosMinVersion)
             {
                 GUIUtils.ShowNotifyDialog(Localisation.Translation.Trailers, Localisation.Translation.OnlineVideosMinVersionNotInstalled);
                 return;
             }
 
-            CurrentMedia = mediaItem;
+            _currentMedia = mediaItem;
 
             if (url.ToLowerInvariant().Contains("youtube.com"))
             {
