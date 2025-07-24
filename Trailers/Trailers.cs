@@ -1,4 +1,4 @@
-﻿using MediaPortal.Configuration;
+using MediaPortal.Configuration;
 using MediaPortal.GUI.Library;
 using MediaPortal.Player;
 using System.Collections.Generic;
@@ -10,6 +10,8 @@ using Trailers.Localisation;
 using Trailers.Player;
 using Trailers.PluginHandlers;
 using Trailers.Providers;
+
+using OnlinePlayer = Trailers.Player.OnlinePlayer;
 
 namespace Trailers
 {
