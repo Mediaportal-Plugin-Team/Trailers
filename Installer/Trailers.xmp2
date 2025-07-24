@@ -548,16 +548,18 @@ Click Next to continue or Cancel to exit Setup.</Value>
       <Build>5</Build>
       <Revision>0</Revision>
     </Version>
-    <ExtensionDescription>Trailers is a plugin which helps users play movie and tvshow trailers from all the media plugins available in MediaPortal.
-
+    <ExtensionDescription>Trailers is a plugin which helps users play movie and tvshow trailers from all the media plugins available in MediaPortal.
+
+
+
 It searches local trailers and online sources, it also has the capability to stream trailers with the help of the OnlineVideos plugin.</ExtensionDescription>
-    <VersionDescription>* Fixed trailer download not working due to changes in OnlineVideos YouTube site - further work may be required as it's unclear whether this is a bug or change of behaviour;
-* Compatibility with new MyFilms v6.1.2+.
-
+    <VersionDescription>* Align with OnlineVideos changes
+
+
 Note: Remember to start contributing to themoviedb.org, this is where all the online searches are coming from.</VersionDescription>
     <DevelopmentStatus>Stable</DevelopmentStatus>
     <OnlineLocation>https://github.com/Mediaportal-Plugin-Team/Trailers/releases/download/v[Version]/Trailers-v[Version].mpe1</OnlineLocation>
-    <ReleaseDate>2024-05-19T13:13:13</ReleaseDate>
+    <ReleaseDate>2025-07-24T13:13:13</ReleaseDate>
     <Tags>trailers</Tags>
     <PlatformCompatibility>AnyCPU</PlatformCompatibility>
     <Location>.\Release\Trailers-v[Version].mpe1</Location>
