@@ -29,4 +29,4 @@ It searches local trailers and online sources, it also has the capability to str
 
 Skinners can add support to their skin by adding a trailers button in the respecitive plugin windows, see [Skin Designers Guide](https://github.com/damienhaynes/Trailers/wiki/Skin-Designers-Guide) for more information.
 
-[Download](http://www.team-mediaportal.com/extensions/movies-videos/trailers)
+[Download](https://github.com/Mediaportal-Plugin-Team/Trailers/releases)
