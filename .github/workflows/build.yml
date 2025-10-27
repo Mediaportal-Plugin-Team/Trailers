@@ -209,7 +209,7 @@ jobs:
           fetch-depth: 0
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Trailers XML
           path: ${{ github.workspace }}/Installer/
@@ -241,13 +241,13 @@ jobs:
 
     steps:
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Trailers MPE1
           path: release-files
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           name: Trailers Version Description
           path: release-description
