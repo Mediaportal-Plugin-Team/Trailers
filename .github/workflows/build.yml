@@ -221,7 +221,7 @@ jobs:
           add: '${{ github.workspace }}/Installer/update.xml'
 
       - name: Delete XML Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: Trailers XML
           failOnError: false
@@ -268,13 +268,13 @@ jobs:
             release-files/*.mpe1
 
       - name: Delete MPE1 Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: Trailers MPE1
           failOnError: false
 
       - name: Delete Version Description Artifact
-        uses: geekyeggo/delete-artifact@v5
+        uses: geekyeggo/delete-artifact@v6
         with:
           name: Trailers Version Description
           failOnError: false
