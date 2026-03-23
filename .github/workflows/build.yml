@@ -215,7 +215,7 @@ jobs:
           path: ${{ github.workspace }}/Installer/
 
       - name: Update / MPE1 XML
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           message: 'Trailers Plugin ${{needs.mpe.outputs.version}} / Release'
           add: '${{ github.workspace }}/Installer/update.xml'
