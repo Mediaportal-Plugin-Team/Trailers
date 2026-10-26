@@ -154,6 +154,7 @@
     <Compile Include="Providers\TMDb\DataStructures\TMDbTrailers.cs" />
     <Compile Include="Providers\TMDb\API\TMDbAPI.cs" />
     <Compile Include="Providers\TMDb\DataStructures\TMDbTrailerResult.cs" />
+    <Compile Include="Providers\TMDb\TMDbCredentials.cs" />
     <Compile Include="Providers\TMDb\TMDbTrailerProvider.cs" />
     <Compile Include="Trailers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

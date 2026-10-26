@@ -1,32 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MediaPortal.Configuration;
+using System;
 using System.IO;
 using System.Threading;
-using MediaPortal.Configuration;
+using Trailers.Providers;
 using Trailers.Providers.TMDb.API;
 
 namespace Trailers
 {
     static class FileLog
     {
-        private static string logFilename = Config.GetFile(Config.Dir.Log,"Trailers.log");
-        private static string backupFilename = Config.GetFile(Config.Dir.Log, "Trailers.bak");
-        private static Object lockObject = new object();
+        private static readonly string mLogFilename = Config.GetFile(Config.Dir.Log,"Trailers.log");
+        private static readonly string mBackupFilename = Config.GetFile(Config.Dir.Log, "Trailers.bak");
+        private static readonly Object mLockObject = new object();
 
         static FileLog()
         {
             // default logging before we load settings
             PluginSettings.LogLevel = 2;
 
-            if (File.Exists(logFilename))
+            if (File.Exists(mLogFilename))
             {
-                if (File.Exists(backupFilename))
+                if (File.Exists(mBackupFilename))
                 {
                     try
                     {
-                        File.Delete(backupFilename);
+                        File.Delete(mBackupFilename);
                     }
                     catch
                     {
@@ -35,7 +33,7 @@ namespace Trailers
                 }
                 try
                 {
-                    File.Move(logFilename, backupFilename);
+                    File.Move(mLogFilename, mBackupFilename);
                 }
                 catch
                 {
@@ -99,6 +97,8 @@ namespace Trailers
 
         private static void TMDbAPI_OnDataSend(string address, string data)
         {
+            address = address.Replace( TMDbCredentials.ApiKey, "********" );
+
             if (!string.IsNullOrEmpty(data))
             {
                 Debug("Address: {0}, Post: {1}", address, data);
@@ -118,9 +118,9 @@ namespace Trailers
         {
             try
             {
-                lock (lockObject)
+                lock (mLockObject)
                 {
-                    StreamWriter sw = File.AppendText(logFilename);
+                    StreamWriter sw = File.AppendText(mLogFilename);
                     sw.WriteLine(log);
                     sw.Close();
                 }
