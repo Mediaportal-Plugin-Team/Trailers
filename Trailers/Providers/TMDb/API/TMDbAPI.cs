@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using System.Web;
 using Trailers.Extensions;
@@ -22,23 +20,21 @@ namespace Trailers.Providers.TMDb.API
 
         #region API variables
 
-        const string apiKey = "e636af47bb9604b7fe591847a98ca408";
-
         // base API url
         private const string apiUrl = "http://api.themoviedb.org/3/";
         
         // trailer uri's
-        private static string apiMovieTrailers = string.Concat(apiUrl, "movie/{0}/videos?language={1}&api_key=", apiKey);
-        private static string apiShowTrailers = string.Concat(apiUrl, "tv/{0}/videos?language={1}&api_key=", apiKey);
-        private static string apiSeasonTrailers = string.Concat(apiUrl, "tv/{0}/season/{1}/videos?language={2}&api_key=", apiKey);
-        private static string apiEpisodeTrailers = string.Concat(apiUrl, "tv/{0}/season/{1}/episode/{2}/videos?language={3}&api_key=", apiKey);
+        private static string apiMovieTrailers = string.Concat( apiUrl, "movie/{0}/videos?language={1}&api_key=", TMDbCredentials.ApiKey);
+        private static string apiShowTrailers = string.Concat( apiUrl, "tv/{0}/videos?language={1}&api_key=", TMDbCredentials.ApiKey );
+        private static string apiSeasonTrailers = string.Concat( apiUrl, "tv/{0}/season/{1}/videos?language={2}&api_key=", TMDbCredentials.ApiKey );
+        private static string apiEpisodeTrailers = string.Concat( apiUrl, "tv/{0}/season/{1}/episode/{2}/videos?language={3}&api_key=", TMDbCredentials.ApiKey );
 
         // search uri's
-        private static string apiMovieSearch = string.Concat(apiUrl, "search/movie?api_key=", apiKey, "&query={0}&page={1}&language={2}&include_adult={3}&year={4}");
-        private static string apiShowSearch = string.Concat(apiUrl, "search/tv?api_key=", apiKey, "&query={0}&page={1}&language={2}&first_air_date_year={3}");
-        private static string apiFind = string.Concat(apiUrl, "find/{0}?&external_source={1}&api_key=", apiKey);
+        private static string apiMovieSearch = string.Concat( apiUrl, "search/movie?api_key=", TMDbCredentials.ApiKey, "&query={0}&page={1}&language={2}&include_adult={3}&year={4}");
+        private static string apiShowSearch = string.Concat( apiUrl, "search/tv?api_key=", TMDbCredentials.ApiKey, "&query={0}&page={1}&language={2}&first_air_date_year={3}");
+        private static string apiFind = string.Concat( apiUrl, "find/{0}?&external_source={1}&api_key=", TMDbCredentials.ApiKey );
 
-        private static string apiEpisodeExIds = string.Concat(apiUrl, "tv/{0}/season/{1}/episode/{2}/external_ids?language={3}&api_key=", apiKey);
+        private static string apiEpisodeExIds = string.Concat( apiUrl, "tv/{0}/season/{1}/episode/{2}/external_ids?language={3}&api_key=", TMDbCredentials.ApiKey );
         #endregion
 
         #region Events
