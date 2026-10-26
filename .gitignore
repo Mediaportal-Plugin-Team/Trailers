@@ -111,3 +111,5 @@ UpgradeLog*.XML
 /.vs/Trailers/v16/Server/sqlite3/storage.ide
 /.vs/Trailers/v16/Server/sqlite3/storage.ide-shm
 /.vs/Trailers/v16/Server/sqlite3/storage.ide-wal
+/Trailers/.vs/Trailers.csproj.dtbcache.json
+/.vs/Trailers/v17

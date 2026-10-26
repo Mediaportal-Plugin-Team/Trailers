@@ -23,11 +23,18 @@ for /f "tokens=*" %%a in ('git rev-list HEAD --count') do set REVISION=%%a
 set REVISION=%REVISION: =%
 "Tools\Tools\sed.exe" -i -r "s/(Assembly(File)?Version\(.[0-9]+\.[0-9]+\.[0-9]+\.)[0-9]+(.\))/\1%REVISION%\3/g" "Trailers\Properties\AssemblyInfo.cs"
 
+REM TMDB API Key
+IF DEFINED TMDB_API_KEY (
+  ECHO [INFO] TMDB API Key found...
+  "Tools\Tools\sed.exe" -i -r "s/SECRET_PLACEHOLDER_TMDB_API_KEY/%TMDB_API_KEY%/g" "Trailers\Providers\TMDb\TMDbCredentials.cs"
+)
+
 :: Build
 "%MSBUILD_PATH%" /target:Rebuild /property:Configuration=RELEASE /fl /flp:logfile=Trailers.log;verbosity=diagnostic Trailers.sln
 
 :: Revert version
 git checkout "Trailers\Properties\AssemblyInfo.cs"
+git checkout "Trailers\Providers\TMDb\TMDbCredentials.cs"
 
 CD build
 

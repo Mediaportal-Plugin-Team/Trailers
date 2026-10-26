@@ -47,6 +47,8 @@ jobs:
           build.cmd < nul
         working-directory: ${{ github.workspace }}\build
         shell: cmd
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
 
       - name: Upload Artifact / Plugin
         uses: actions/upload-artifact@v7
